@@ -1,34 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shailja Brijwal | Business Analytics</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shailja Brijwal | Business Analytics</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f7f3;
+      color: #1f2d2a;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 24px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      border-bottom: 1px solid #e6e6e6;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #1f2d2a;
+      font-weight: 600;
+    }
+
+    .hero {
+      padding: 90px 8% 70px;
+      max-width: 950px;
+    }
+
+    .hero p:first-child {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #557c70;
+      text-transform: uppercase;
+    }
+
+    .hero h2 {
+      font-size: 52px;
+      line-height: 1.1;
+      margin: 12px 0 20px;
+    }
+
+    .hero .intro {
+      font-size: 20px;
+      max-width: 760px;
+      color: #475651;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      border-radius: 6px;
+      background: #315f54;
+      color: white;
+      font-weight: 700;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: #315f54;
+      border: 1px solid #315f54;
+    }
+
+    section {
+      padding: 65px 8%;
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .section-intro {
+      max-width: 760px;
+      color: #58645f;
+      margin-bottom: 28px;
+    }
+
+    .project-card {
+      background: white;
+      padding: 32px;
+      border-radius: 10px;
+      max-width: 900px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      font-size: 25px;
+    }
+
+    .metrics {
+      margin: 22px 0;
+      font-weight: 700;
+      color: #315f54;
+    }
+
+    .three-columns {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 28px;
+    }
+
+    .card {
+      background: white;
+      padding: 26px;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    }
+
+    .personal {
+      background: #eef2ed;
+    }
+
+    footer {
+      padding: 38px 8%;
+      background: #1f2d2a;
+      color: white;
+    }
+
+    footer a {
+      color: white;
+      margin-right: 18px;
+    }
+
+    @media (max-width: 800px) {
+      .hero h2 {
+        font-size: 38px;
+      }
+
+      .three-columns {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
+  <header>
     <h1>Shailja Brijwal</h1>
 
-    <h2>Business Analytics | Commercial Strategy | AI</h2>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#beyond">Beyond the Data</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <p>Business Analytics · Commercial Strategy · AI</p>
+
+      <h2>Turning business problems into practical, data-informed decisions.</h2>
+
+      <p class="intro">
+        I bring together extensive international commercial experience with
+        business analytics, machine learning and stakeholder thinking to solve
+        complex problems and turn insight into action.
+      </p>
+
+      <div class="buttons">
+        <a class="button" href="#projects">Explore My Work</a>
+        <a class="button secondary" href="#contact">Get in Touch</a>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Work</h2>
+
+      <p class="section-intro">
+        I enjoy working on problems where the analytical answer is only useful
+        if it can also support a real business decision.
+      </p>
+
+      <div class="project-card">
+        <h3>Early Student Risk Prediction</h3>
+
+        <p>
+          Developed an interpretable predictive analytics solution using early
+          student engagement data to identify student-course pairs at higher
+          risk of unsuccessful outcomes.
+        </p>
+
+        <p>
+          The project combined feature engineering, logistic regression,
+          XGBoost, model evaluation, explainability and business-focused
+          recommendations.
+        </p>
+
+        <div class="metrics">
+          12M+ engagement records · 117K+ student-course pairs · ROC-AUC 0.86
+        </div>
+
+        <a class="button" href="#">View Case Study — Coming Soon</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>What I Bring</h2>
+
+      <div class="three-columns">
+        <div class="card">
+          <h3>Business Perspective</h3>
+          <p>
+            Years of commercial experience across international
+            telecommunications markets, client partnerships and growth-focused
+            decision-making.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Analytics</h3>
+          <p>
+            Experience with Python, Power BI, machine learning, predictive
+            modelling and analytical problem solving.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Communication</h3>
+          <p>
+            I enjoy translating technical findings into clear recommendations
+            that stakeholders can understand and use.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>My Story</h2>
+
+      <p class="section-intro">
+        My career began in telecommunications, where I worked across commercial
+        strategy, customer engagement and international client relationships.
+        After taking time away from full-time work to focus on family, I
+        returned to study and completed a Master of Business Analytics at the
+        University of Auckland.
+      </p>
+
+      <p class="section-intro">
+        Today, I am interested in the intersection of commercial thinking,
+        analytics and technology — especially work where data can lead to
+        clearer decisions, better customer outcomes and meaningful change.
+      </p>
+    </section>
+
+    <section id="beyond" class="personal">
+      <h2>Beyond the Data</h2>
+
+      <p class="section-intro">
+        Outside work, I am a mum to two daughters, a nature lover and a yoga
+        enthusiast. I also love creating a warm and welcoming home. These parts
+        of my life keep me curious, grounded and connected to the human side of
+        problem-solving.
+      </p>
+    </section>
+
+  </main>
+
+  <footer id="contact">
+    <h2>Let's Connect</h2>
 
     <p>
-        Welcome to my professional portfolio.
+      Auckland, New Zealand
     </p>
 
     <p>
-        I combine extensive international commercial experience with business
-        analytics, machine learning and data-driven problem solving.
+      <a href="#">LinkedIn</a>
+      <a href="#">Download CV</a>
+      <a href="mailto:your-email@example.com">Email</a>
     </p>
-
-    <h2>Featured Projects</h2>
-
-    <p>
-        Coming soon — I'm building this space to showcase the business problems
-        I've explored, the analytics I've applied, and the insights I've uncovered.
-    </p>
+  </footer>
 
 </body>
-
 </html>
