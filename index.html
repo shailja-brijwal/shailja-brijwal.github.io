@@ -1,362 +1,521 @@
-<style>
+<!DOCTYPE html>
+<html lang="en">
 
-/* CASE STUDY LINK */
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.case-study-link {
-  display: inline-block;
-  margin-top: 18px;
-  font-weight: 700;
-  color: #557c70;
-  text-decoration: none;
-  transition: opacity 0.2s ease;
-}
+  <title>Shailja Brijwal | Business Analytics</title>
 
-.case-study-link:hover {
-  text-decoration: underline;
-  opacity: 0.85;
-}
+  <style>
 
+    * {
+      box-sizing: border-box;
+    }
 
-/* FEATURED WORK */
+    html {
+      scroll-behavior: smooth;
+    }
 
-#projects {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 50px 40px 80px;
-}
-
-#projects > h2 {
-  margin-top: 0;
-  margin-bottom: 22px;
-}
-
-.section-intro {
-  max-width: 900px;
-  margin-bottom: 38px;
-}
-
-.project-card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 44px 50px;
-  box-shadow: 0 8px 24px rgba(30, 50, 44, 0.06);
-}
-
-.project-label {
-  margin: 0 0 14px;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 1.2px;
-  color: #557c70;
-  text-transform: uppercase;
-}
-
-.project-card h3 {
-  margin-top: 0;
-  margin-bottom: 28px;
-}
-
-.project-card p {
-  line-height: 1.65;
-}
-
-.project-role {
-  margin-top: 20px;
-}
-
-.metrics {
-  margin-top: 22px;
-  font-weight: 700;
-  color: #356b5e;
-}
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #1f302b;
+      background: #f8f7f3;
+      line-height: 1.6;
+    }
 
 
-/* FULL CASE STUDY */
+    /* HEADER */
 
-.case-study {
-  max-width: 1100px;
-  margin: 55px auto 0;
-  padding: 60px;
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(30, 50, 44, 0.05);
-}
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e7e7e2;
+    }
 
-.case-study .eyebrow {
-  margin: 0 0 12px;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 1.2px;
-  color: #557c70;
-  text-transform: uppercase;
-}
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 22px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-.case-study > h2 {
-  margin: 0 0 20px;
-  font-size: 38px;
-  line-height: 1.2;
-}
+    .name {
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0;
+    }
 
-.case-study-lead {
-  max-width: 850px;
-  margin-bottom: 42px;
-  font-size: 22px;
-  line-height: 1.55;
-  color: #45544f;
-}
+    nav {
+      display: flex;
+      gap: 32px;
+    }
 
-.case-study-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 36px 60px;
-  margin-top: 35px;
-}
+    nav a {
+      color: #1f302b;
+      text-decoration: none;
+      font-weight: 600;
+    }
 
-.case-study-grid h3,
-.case-study-result h3,
-.case-study-insight h3 {
-  margin-top: 0;
-  margin-bottom: 12px;
-}
-
-.case-study-grid p,
-.case-study-result p,
-.case-study-insight p {
-  line-height: 1.7;
-}
-
-.case-study-result {
-  margin-top: 48px;
-  padding: 32px 38px;
-  background: #f4f6f3;
-  border-left: 4px solid #557c70;
-  border-radius: 6px;
-}
-
-.case-study-result h3 {
-  font-size: 27px;
-}
-
-.case-study-insight {
-  margin-top: 45px;
-  max-width: 880px;
-}
-
-.case-study-insight h3 {
-  font-size: 25px;
-}
+    nav a:hover {
+      color: #557c70;
+    }
 
 
-/* MOBILE */
+    /* HERO */
 
-@media (max-width: 750px) {
+    .hero {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 90px 40px 65px;
+    }
 
-  #projects {
-    padding: 40px 24px 60px;
-  }
+    .hero > p:first-child {
+      color: #557c70;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
 
-  .project-card {
-    padding: 32px 26px;
-  }
+    .hero h1 {
+      max-width: 900px;
+      font-size: 56px;
+      line-height: 1.12;
+      margin: 0 0 24px;
+      letter-spacing: -1.5px;
+    }
 
-  .case-study {
-    margin-top: 40px;
-    padding: 35px 24px;
-  }
+    .intro {
+      max-width: 850px;
+      font-size: 21px;
+      color: #53615d;
+      margin-bottom: 34px;
+    }
 
-  .case-study > h2 {
-    font-size: 30px;
-  }
+    .buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
 
-  .case-study-lead {
-    font-size: 19px;
-  }
+    .button {
+      display: inline-block;
+      background: #32695c;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 14px 24px;
+      border-radius: 6px;
+      font-weight: 700;
+      border: 1px solid #32695c;
+    }
 
-  .case-study-grid {
-    grid-template-columns: 1fr;
-    gap: 28px;
-  }
+    .button.secondary {
+      background: transparent;
+      color: #32695c;
+    }
 
-  .case-study-result {
-    padding: 28px 24px;
-  }
-}
-
-</style>
-
-
-<header>
-  <div class="header-inner">
-
-    <p class="name">Shailja Brijwal</p>
-
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#beyond">Beyond the Data</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-  </div>
-</header>
-
-
-<section class="hero">
-
-  <p>Business Analytics · Commercial Strategy · AI</p>
-
-  <h1>
-    Turning business problems into practical,
-    data-informed decisions.
-  </h1>
-
-  <p class="intro">
-    I bring together extensive international commercial experience with
-    business analytics and machine learning to solve complex problems,
-    uncover meaningful insights and turn them into action.
-  </p>
-
-  <div class="buttons">
-    <a class="button" href="#projects">Explore My Work</a>
-    <a class="button secondary" href="#contact">Get in Touch</a>
-  </div>
-
-</section>
+    .button:hover {
+      opacity: 0.88;
+    }
 
 
-<section id="projects">
+    /* FEATURED WORK */
 
-  <h2>Featured Work</h2>
+    #projects {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 50px 40px 80px;
+    }
 
-  <p class="section-intro">
-    I enjoy working on problems where the analytical answer is only useful
-    if it can also support a real business decision.
-  </p>
+    #projects > h2 {
+      font-size: 36px;
+      line-height: 1.2;
+      margin: 0 0 20px;
+    }
+
+    .section-intro {
+      max-width: 850px;
+      color: #5b6763;
+      font-size: 18px;
+      margin: 0 0 38px;
+    }
+
+    .project-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 44px 50px;
+      border: 1px solid #e8ebe7;
+      box-shadow: 0 8px 24px rgba(30, 50, 44, 0.05);
+    }
+
+    .project-label {
+      margin: 0 0 14px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      color: #557c70;
+      text-transform: uppercase;
+    }
+
+    .project-card h3 {
+      font-size: 28px;
+      margin: 0 0 24px;
+    }
+
+    .project-card p {
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    .project-role {
+      margin-top: 18px;
+    }
+
+    .metrics {
+      margin-top: 22px;
+      font-size: 17px;
+      font-weight: 700;
+      color: #32695c;
+    }
+
+    .case-study-link {
+      display: inline-block;
+      margin-top: 20px;
+      font-weight: 700;
+      color: #557c70;
+      text-decoration: none;
+    }
+
+    .case-study-link:hover {
+      text-decoration: underline;
+    }
 
 
-  <div class="project-card">
+    /* FULL CASE STUDY */
 
-    <p class="project-label">
-      Flagship Project
+    .case-study {
+      max-width: 1100px;
+      margin: 55px auto 0;
+      padding: 60px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(30, 50, 44, 0.05);
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      color: #557c70;
+      text-transform: uppercase;
+    }
+
+    .case-study > h2 {
+      margin: 0 0 20px;
+      font-size: 38px;
+      line-height: 1.2;
+    }
+
+    .case-study-lead {
+      max-width: 850px;
+      margin-bottom: 42px;
+      font-size: 22px;
+      line-height: 1.55;
+      color: #45544f;
+    }
+
+    .case-study-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 36px 60px;
+      margin-top: 35px;
+    }
+
+    .case-study-grid h3,
+    .case-study-result h3,
+    .case-study-insight h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .case-study-grid p,
+    .case-study-result p,
+    .case-study-insight p {
+      line-height: 1.7;
+    }
+
+    .case-study-result {
+      margin-top: 48px;
+      padding: 32px 38px;
+      background: #f4f6f3;
+      border-left: 4px solid #557c70;
+      border-radius: 6px;
+    }
+
+    .case-study-result h3 {
+      font-size: 27px;
+    }
+
+    .case-study-insight {
+      margin-top: 45px;
+      max-width: 880px;
+    }
+
+    .case-study-insight h3 {
+      font-size: 25px;
+    }
+
+
+    /* MOBILE */
+
+    @media (max-width: 750px) {
+
+      .header-inner {
+        padding: 20px 24px;
+        align-items: flex-start;
+        gap: 20px;
+      }
+
+      nav {
+        gap: 14px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      nav a {
+        font-size: 14px;
+      }
+
+      .hero {
+        padding: 70px 24px 50px;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .intro {
+        font-size: 18px;
+      }
+
+      #projects {
+        padding: 40px 24px 60px;
+      }
+
+      .project-card {
+        padding: 32px 26px;
+      }
+
+      .case-study {
+        margin-top: 40px;
+        padding: 35px 24px;
+      }
+
+      .case-study > h2 {
+        font-size: 30px;
+      }
+
+      .case-study-lead {
+        font-size: 19px;
+      }
+
+      .case-study-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .case-study-result {
+        padding: 28px 24px;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <header>
+    <div class="header-inner">
+
+      <p class="name">Shailja Brijwal</p>
+
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#beyond">Beyond the Data</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <section class="hero">
+
+    <p>Business Analytics · Commercial Strategy · AI</p>
+
+    <h1>
+      Turning business problems into practical,
+      data-informed decisions.
+    </h1>
+
+    <p class="intro">
+      I bring together extensive international commercial experience with
+      business analytics and machine learning to solve complex problems,
+      uncover meaningful insights and turn them into action.
     </p>
 
-    <h3>Early Student Risk Prediction</h3>
-
-    <p>
-      Developed an interpretable predictive analytics solution using early
-      student engagement data to identify student-course pairs at higher risk
-      of unsuccessful course outcomes.
-    </p>
-
-    <p>
-      The project combined feature engineering, logistic regression, XGBoost,
-      model evaluation, explainability and business-focused recommendations.
-    </p>
-
-    <p class="project-role">
-      <strong>Role:</strong> Project Lead &amp; Modelling Co-Lead
-    </p>
-
-    <div class="metrics">
-      12M+ engagement records · 117K+ student-course pairs · ROC-AUC 0.86
+    <div class="buttons">
+      <a class="button" href="#projects">Explore My Work</a>
+      <a class="button secondary" href="#contact">Get in Touch</a>
     </div>
 
-    <a class="case-study-link" href="#student-risk-case-study">
-      View Full Case Study →
-    </a>
-
-  </div>
+  </section>
 
 
-  <div class="case-study" id="student-risk-case-study">
+  <section id="projects">
 
-    <p class="eyebrow">Case Study</p>
+    <h2>Featured Work</h2>
 
-    <h2>Predicting Early Student Risk</h2>
-
-    <p class="case-study-lead">
-      How early digital engagement signals can help identify students who
-      may need support — while there is still time to intervene.
+    <p class="section-intro">
+      I enjoy working on problems where the analytical answer is only useful
+      if it can also support a real business decision.
     </p>
 
 
-    <div class="case-study-grid">
+    <div class="project-card">
 
-      <div>
-        <h3>The Challenge</h3>
+      <p class="project-label">Flagship Project</p>
 
-        <p>
-          Using early student engagement data, our challenge was to identify
-          student-course pairs at higher risk of unsuccessful course outcomes
-          while the university still had time to provide meaningful support.
-        </p>
-      </div>
-
-
-      <div>
-        <h3>The Scale</h3>
-
-        <p>
-          The analysis brought together more than 12 million daily engagement
-          records, representing over 117,000 student-course pairs across
-          multiple faculties.
-        </p>
-      </div>
-
-
-      <div>
-        <h3>My Role</h3>
-
-        <p>
-          As Project Lead and Modelling Co-Lead, I helped shape the analytical
-          approach, develop and evaluate predictive models, interpret results,
-          and translate the analysis into recommendations for stakeholders.
-        </p>
-      </div>
-
-
-      <div>
-        <h3>The Approach</h3>
-
-        <p>
-          We engineered behavioural features from early engagement patterns
-          and compared an interpretable logistic regression baseline with
-          XGBoost. Model performance was assessed alongside explainability
-          and practical usefulness.
-        </p>
-      </div>
-
-    </div>
-
-
-    <div class="case-study-result">
-
-      <h3>ROC-AUC improved from 0.79 to 0.86</h3>
+      <h3>Early Student Risk Prediction</h3>
 
       <p>
-        The final XGBoost model achieved approximately 0.67 recall and
-        0.33 precision at the selected operating threshold, while reducing
-        false positives by around 3,000 compared with the baseline approach
-        at similar recall.
+        Developed an interpretable predictive analytics solution using early
+        student engagement data to identify student-course pairs at higher risk
+        of unsuccessful course outcomes.
       </p>
-
-    </div>
-
-
-    <div class="case-study-insight">
-
-      <h3>From prediction to decision</h3>
 
       <p>
-        The goal was not simply to build the most accurate model. The solution
-        needed to be interpretable, equitable and operationally useful. The
-        analysis therefore focused on identifying meaningful engagement
-        patterns and translating model outputs into insights that could support
-        targeted student interventions.
+        The project combined feature engineering, logistic regression, XGBoost,
+        model evaluation, explainability and business-focused recommendations.
       </p>
+
+      <p class="project-role">
+        <strong>Role:</strong> Project Lead &amp; Modelling Co-Lead
+      </p>
+
+      <div class="metrics">
+        12M+ engagement records · 117K+ student-course pairs · ROC-AUC 0.86
+      </div>
+
+      <a class="case-study-link" href="#student-risk-case-study">
+        View Full Case Study →
+      </a>
 
     </div>
 
-  </div>
 
-</section>
+    <div class="case-study" id="student-risk-case-study">
+
+      <p class="eyebrow">Case Study</p>
+
+      <h2>Predicting Early Student Risk</h2>
+
+      <p class="case-study-lead">
+        How early digital engagement signals can help identify students who
+        may need support — while there is still time to intervene.
+      </p>
+
+
+      <div class="case-study-grid">
+
+        <div>
+          <h3>The Challenge</h3>
+
+          <p>
+            Using early student engagement data, our challenge was to identify
+            student-course pairs at higher risk of unsuccessful course outcomes
+            while the university still had time to provide meaningful support.
+          </p>
+        </div>
+
+
+        <div>
+          <h3>The Scale</h3>
+
+          <p>
+            The analysis brought together more than 12 million daily engagement
+            records, representing over 117,000 student-course pairs across
+            multiple faculties.
+          </p>
+        </div>
+
+
+        <div>
+          <h3>My Role</h3>
+
+          <p>
+            As Project Lead and Modelling Co-Lead, I helped shape the analytical
+            approach, develop and evaluate predictive models, interpret results,
+            and translate the analysis into recommendations for stakeholders.
+          </p>
+        </div>
+
+
+        <div>
+          <h3>The Approach</h3>
+
+          <p>
+            We engineered behavioural features from early engagement patterns
+            and compared an interpretable logistic regression baseline with
+            XGBoost. Model performance was assessed alongside explainability
+            and practical usefulness.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="case-study-result">
+
+        <p class="eyebrow">Key Result</p>
+
+        <h3>ROC-AUC improved from 0.79 to 0.86</h3>
+
+        <p>
+          The final XGBoost model achieved approximately 0.67 recall and
+          0.33 precision at the selected operating threshold, while reducing
+          false positives by around 3,000 compared with the baseline approach
+          at similar recall.
+        </p>
+
+      </div>
+
+
+      <div class="case-study-insight">
+
+        <h3>From prediction to decision</h3>
+
+        <p>
+          The goal was not simply to build the most accurate model. The solution
+          needed to be interpretable, equitable and operationally useful. The
+          analysis therefore focused on identifying meaningful engagement
+          patterns and translating model outputs into insights that could support
+          targeted student interventions.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+
+</html>
