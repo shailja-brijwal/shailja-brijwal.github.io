@@ -420,100 +420,504 @@
       </a>
 
     </div>
+<div class="case-study" id="student-risk-case-study">
+
+  <p class="eyebrow">Flagship Case Study</p>
+
+  <h2>Early Engagement Analytics for Student Risk</h2>
+
+  <p class="case-study-lead">
+    Turning fragmented digital engagement data into an interpretable,
+    equity-aware early-warning framework for timely student support.
+  </p>
 
 
-    <div class="case-study" id="student-risk-case-study">
+  <!-- PROJECT SNAPSHOT -->
 
-      <p class="eyebrow">Case Study</p>
+  <div class="snapshot-grid">
 
-      <h2>Predicting Early Student Risk</h2>
+    <div class="snapshot-item">
+      <span class="snapshot-number">12M+</span>
+      <span class="snapshot-label">Daily engagement records</span>
+    </div>
 
-      <p class="case-study-lead">
-        How early digital engagement signals can help identify students who
-        may need support — while there is still time to intervene.
+    <div class="snapshot-item">
+      <span class="snapshot-number">117K+</span>
+      <span class="snapshot-label">Student-course pairs</span>
+    </div>
+
+    <div class="snapshot-item">
+      <span class="snapshot-number">11</span>
+      <span class="snapshot-label">Institutional datasets</span>
+    </div>
+
+    <div class="snapshot-item">
+      <span class="snapshot-number">0.86</span>
+      <span class="snapshot-label">Final ROC-AUC</span>
+    </div>
+
+  </div>
+
+
+  <!-- CLIENT / ROLE -->
+
+  <div class="case-study-meta">
+
+    <div>
+      <h3>Client</h3>
+      <p>
+        Planning and Information Office (PIO),
+        University of Auckland | Waipapa Taumata Rau
       </p>
+    </div>
+
+    <div>
+      <h3>My Role</h3>
+      <p>
+        Project Lead &amp; Modelling Co-Lead
+      </p>
+    </div>
+
+    <div>
+      <h3>Methods</h3>
+      <p>
+        Python · Feature Engineering · Statistical Testing · Logistic Regression ·
+        Random Forest · XGBoost · Power BI
+      </p>
+    </div>
+
+  </div>
 
 
-      <div class="case-study-grid">
+  <!-- BUSINESS CHALLENGE -->
 
-        <div>
-          <h3>The Challenge</h3>
+  <div class="case-study-section">
 
-          <p>
-            Using early student engagement data, our challenge was to identify
-            student-course pairs at higher risk of unsuccessful course outcomes
-            while the university still had time to provide meaningful support.
-          </p>
-        </div>
+    <p class="eyebrow">01 · Business Challenge</p>
 
+    <h3>Identifying risk early enough to make support useful</h3>
 
-        <div>
-          <h3>The Scale</h3>
+    <p>
+      Academic risk often becomes visible only after missed assessments,
+      declining grades or sustained disengagement — when the opportunity for
+      meaningful intervention is already narrowing.
+    </p>
 
-          <p>
-            The analysis brought together more than 12 million daily engagement
-            records, representing over 117,000 student-course pairs across
-            multiple faculties.
-          </p>
-        </div>
+    <p>
+      The challenge was therefore not simply to predict who might fail.
+      The solution needed to identify risk early, produce manageable
+      intervention cohorts, explain why a student-course pair had been
+      flagged, and support equitable human decision-making.
+    </p>
 
-
-        <div>
-          <h3>My Role</h3>
-
-          <p>
-            As Project Lead and Modelling Co-Lead, I helped shape the analytical
-            approach, develop and evaluate predictive models, interpret results,
-            and translate the analysis into recommendations for stakeholders.
-          </p>
-        </div>
+  </div>
 
 
-        <div>
-          <h3>The Approach</h3>
+  <!-- DATA -->
 
-          <p>
-            We engineered behavioural features from early engagement patterns
-            and compared an interpretable logistic regression baseline with
-            XGBoost. Model performance was assessed alongside explainability
-            and practical usefulness.
-          </p>
-        </div>
+  <div class="case-study-section">
 
+    <p class="eyebrow">02 · Data &amp; Feature Engineering</p>
+
+    <h3>Turning fragmented operational data into behavioural signals</h3>
+
+    <p>
+      Eleven institutional datasets were integrated across different levels
+      of granularity, including daily Canvas engagement, academic outcomes,
+      demographics, course characteristics and assessment structures.
+    </p>
+
+    <p>
+      The common analytical unit became the <strong>student-course pair</strong>,
+      recognising that the same student can engage very differently across
+      different courses.
+    </p>
+
+    <p>
+      Raw engagement data were transformed into interpretable behavioural
+      features capturing:
+    </p>
+
+    <div class="feature-tags">
+      <span>Recency</span>
+      <span>Consistency</span>
+      <span>Engagement decay</span>
+      <span>Assessment responsiveness</span>
+      <span>Engagement intensity</span>
+      <span>Persona behaviour</span>
+    </div>
+
+  </div>
+
+
+  <!-- PERSONAS -->
+
+  <div class="case-study-section">
+
+    <p class="eyebrow">03 · Behavioural Segmentation</p>
+
+    <h3>Four engagement personas made early risk interpretable</h3>
+
+    <p>
+      Early login behaviour was translated into four student-course
+      engagement personas. Statistical testing confirmed that persona
+      membership was meaningfully associated with academic outcomes.
+    </p>
+
+    <div class="persona-grid">
+
+      <div class="persona-card">
+        <h4>Keen Beans</h4>
+        <p class="persona-stat">5.5% failure rate</p>
+        <p>Early and comparatively engaged.</p>
       </div>
 
-
-      <div class="case-study-result">
-
-        <p class="eyebrow">Key Result</p>
-
-        <h3>ROC-AUC improved from 0.79 to 0.86</h3>
-
-        <p>
-          The final XGBoost model achieved approximately 0.67 recall and
-          0.33 precision at the selected operating threshold, while reducing
-          false positives by around 3,000 compared with the baseline approach
-          at similar recall.
-        </p>
-
+      <div class="persona-card">
+        <h4>Browsers</h4>
+        <p class="persona-stat">5.2% failure rate</p>
+        <p>Moderate early engagement.</p>
       </div>
 
+      <div class="persona-card">
+        <h4>Hibernators</h4>
+        <p class="persona-stat">6.9% failure rate</p>
+        <p>Persistently weaker engagement.</p>
+      </div>
 
-      <div class="case-study-insight">
-
-        <h3>From prediction to decision</h3>
-
+      <div class="persona-card highlight-persona">
+        <h4>Late Starters</h4>
+        <p class="persona-stat">10.9% failure rate</p>
         <p>
-          The goal was not simply to build the most accurate model. The solution
-          needed to be interpretable, equitable and operationally useful. The
-          analysis therefore focused on identifying meaningful engagement
-          patterns and translating model outputs into insights that could support
-          targeted student interventions.
+          Highest-risk and largest group, representing 51.8% of
+          persona-labelled student-course pairs.
         </p>
-
       </div>
 
     </div>
+
+    <p class="case-study-note">
+      The personas were designed as behavioural support signals rather than
+      labels of student motivation or ability.
+    </p>
+
+  </div>
+
+
+  <!-- INTERVENTION WINDOW -->
+
+  <div class="case-study-section">
+
+    <p class="eyebrow">04 · Intervention Timing</p>
+
+    <h3>Week 4 emerged as the practical decision point</h3>
+
+    <p>
+      By Week 4, more than 98% of student-course pairs had generated at
+      least one Canvas login and behavioural features such as recency,
+      consistency and engagement intensity had begun to stabilise.
+    </p>
+
+    <p>
+      Waiting longer would improve certainty but reduce the remaining time
+      for meaningful support. Week 4 therefore became the operational balance
+      between <strong>signal maturity</strong> and
+      <strong>intervention lead time</strong>.
+    </p>
+
+  </div>
+
+
+  <!-- MODELLING -->
+
+  <div class="case-study-section">
+
+    <p class="eyebrow">05 · Predictive Modelling</p>
+
+    <h3>Choosing the model meant balancing detection with operational workload</h3>
+
+    <p>
+      Because only around 8.5% of student-course outcomes were failures,
+      accuracy alone would have been misleading. The modelling therefore
+      prioritised ROC-AUC, fail recall and fail precision.
+    </p>
+
+    <div class="model-table">
+
+      <div class="model-row model-header">
+        <span>Model</span>
+        <span>ROC-AUC</span>
+        <span>Recall</span>
+        <span>Precision</span>
+      </div>
+
+      <div class="model-row">
+        <span>Logistic Regression</span>
+        <span>0.79</span>
+        <span>0.66</span>
+        <span>0.21</span>
+      </div>
+
+      <div class="model-row">
+        <span>Feature-Selected Logistic</span>
+        <span>0.76</span>
+        <span>0.61</span>
+        <span>0.19</span>
+      </div>
+
+      <div class="model-row">
+        <span>Random Forest</span>
+        <span>0.85</span>
+        <span>0.23</span>
+        <span>0.84</span>
+      </div>
+
+      <div class="model-row selected-model">
+        <span>XGBoost</span>
+        <span>0.86</span>
+        <span>0.67*</span>
+        <span>0.33*</span>
+      </div>
+
+    </div>
+
+    <p class="case-study-note">
+      *At the selected operational threshold of 0.55.
+    </p>
+
+  </div>
+
+
+  <!-- RESULT -->
+
+  <div class="case-study-result">
+
+    <p class="eyebrow">Key Operational Result</p>
+
+    <h3>Approximately 3,000 fewer false-positive alerts</h3>
+
+    <p>
+      At the selected 0.55 threshold, XGBoost identified approximately
+      two-thirds of genuine failures while improving precision to roughly
+      one in three flagged records.
+    </p>
+
+    <p>
+      Compared with the Logistic Regression baseline, this reduced
+      false-positive alerts by more than 3,000 while retaining useful recall —
+      creating a more credible review list for staff-led triage.
+    </p>
+
+  </div>
+
+
+  <!-- WHAT ANALYSIS REVEALED -->
+
+  <div class="case-study-section">
+
+    <p class="eyebrow">06 · What the Analysis Revealed</p>
+
+    <div class="insight-grid">
+
+      <div class="insight-card">
+        <h3>Risk was concentrated, not system-wide</h3>
+
+        <p>
+          The overall pass rate was 91.5%. The real business challenge was
+          finding the smaller group of student-course pairs where support
+          could make the greatest difference.
+        </p>
+      </div>
+
+      <div class="insight-card">
+        <h3>A single login flag was not enough</h3>
+
+        <p>
+          Engagement trajectories showed that students could recover or
+          deteriorate over time, supporting the use of recency, consistency
+          and decay features rather than a single engagement snapshot.
+        </p>
+      </div>
+
+      <div class="insight-card">
+        <h3>Equity gaps extended beyond engagement</h3>
+
+        <p>
+          Pacific and Māori pass-rate gaps were not explained simply by
+          persona composition, suggesting that behavioural analytics should
+          trigger support rather than be treated as a complete explanation
+          of academic outcomes.
+        </p>
+      </div>
+
+      <div class="insight-card">
+        <h3>Implementation needed prioritisation</h3>
+
+        <p>
+          Science was identified as the strongest pilot candidate because
+          it combined the largest student-course volume with the lowest
+          faculty pass rate.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- POWER BI -->
+
+  <div class="case-study-section">
+
+    <p class="eyebrow">07 · From Model to Action</p>
+
+    <h3>Power BI turned probability scores into a staff workflow</h3>
+
+    <p>
+      A risk score alone was not operationally useful. The project therefore
+      translated XGBoost output into a Power BI decision-support layer with
+      three levels of review:
+    </p>
+
+    <div class="workflow">
+
+      <div class="workflow-step">
+        <span class="workflow-number">1</span>
+        <div>
+          <h4>Executive Overview</h4>
+          <p>
+            Leadership view of overall risk scale and distribution across
+            faculties and student groups.
+          </p>
+        </div>
+      </div>
+
+      <div class="workflow-step">
+        <span class="workflow-number">2</span>
+        <div>
+          <h4>Risk Deep-Dive</h4>
+          <p>
+            Analyst view explaining why records are being flagged using
+            engagement and course-level context.
+          </p>
+        </div>
+      </div>
+
+      <div class="workflow-step">
+        <span class="workflow-number">3</span>
+        <div>
+          <h4>Student-Course Detail</h4>
+          <p>
+            Action layer where staff can review specific flagged records
+            before deciding whether outreach is appropriate.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="human-led-callout">
+      <strong>Design principle:</strong>
+      The dashboard supports staff judgement. It is not an automated
+      decision-making system.
+    </div>
+
+  </div>
+
+
+  <!-- RECOMMENDATIONS -->
+
+  <div class="case-study-section">
+
+    <p class="eyebrow">08 · Recommendations</p>
+
+    <h3>Turning early insight into early action</h3>
+
+    <div class="recommendation-list">
+
+      <div>
+        <strong>01</strong>
+        <p>
+          Introduce a staged workflow: simple activation checks in Week 1
+          followed by model-supported triage from Week 4.
+        </p>
+      </div>
+
+      <div>
+        <strong>02</strong>
+        <p>
+          Tailor outreach to behavioural personas rather than using generic
+          communication for every flagged student.
+        </p>
+      </div>
+
+      <div>
+        <strong>03</strong>
+        <p>
+          Embed equity review and culturally appropriate support pathways
+          within the intervention process.
+        </p>
+      </div>
+
+      <div>
+        <strong>04</strong>
+        <p>
+          Deploy XGBoost risk outputs through Power BI as a human-led
+          decision-support tool.
+        </p>
+      </div>
+
+      <div>
+        <strong>05</strong>
+        <p>
+          Validate performance on additional semesters and establish
+          governance before full production deployment.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- LIMITATIONS -->
+
+  <div class="case-study-section">
+
+    <p class="eyebrow">09 · Responsible Implementation</p>
+
+    <h3>Prediction is a support signal, not a judgement</h3>
+
+    <p>
+      Canvas engagement is only a proxy for learning behaviour, and the
+      analysis was based on a single semester. Students may learn through
+      channels that are not visible in Canvas, and outcome disparities
+      cannot be assumed to be caused by engagement behaviour.
+    </p>
+
+    <p>
+      The recommended implementation therefore preserves staff judgement,
+      requires subgroup monitoring, and calls for further semester validation,
+      privacy controls and clear student communication protocols.
+    </p>
+
+  </div>
+
+
+  <!-- FINAL TAKEAWAY -->
+
+  <div class="case-study-final">
+
+    <p class="eyebrow">The Takeaway</p>
+
+    <h3>
+      The value of learning analytics is not predicting failure itself —
+      it is creating enough lead time for meaningful support.
+    </h3>
+
+  </div>
+
+</div>
+    
 
   </section>
 
